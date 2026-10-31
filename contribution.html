@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Contribution</title>
+</head>
+<body>
+    <h1>Team Contribution</h1>
+    <button id="load-contributor">Show Contributor</button>
+    <p>Contributor Student ID: <span id="contributor-student-id"></span></p>
+    <a href="index.html">Back to Task Manager</a>
+
+    <script>
+        document.getElementById("load-contributor").addEventListener("click", async () => {
+            const element = document.getElementById("contributor-student-id");
+
+            try {
+                const response = await fetch("contribution.json");
+
+                if (!response.ok) {
+                    throw new Error("Could not load contributor data");
+                }
+
+                const data = await response.json();
+                element.textContent = data.studentId;
+            } catch (error) {
+                element.textContent = "Error loading contributor ID";
+            }
+        });
+    </script>
+</body>
+</html>
