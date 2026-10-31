@@ -1,0 +1,24 @@
+# Free Supabase projects are paused after a week of low activity, and the
+# course may check the deployed app at any time. One small read per day
+# through the public REST API keeps the demo database awake.
+name: Supabase keep-alive
+
+on:
+  schedule:
+    - cron: "23 7 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Read one task through the REST API
+        run: |
+          config=$(curl -fsS "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${GITHUB_REF_NAME}/config.json")
+          url=$(jq -r '.supabaseUrl' <<<"$config")
+          key=$(jq -r '.supabasePublishableKey' <<<"$config")
+          table=$(jq -r '.tableName' <<<"$config")
+          curl -fsS "${url%/}/rest/v1/${table}?select=id&limit=1" -H "apikey: ${key}"
