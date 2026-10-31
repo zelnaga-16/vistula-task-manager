@@ -5,14 +5,14 @@ Plain HTML, CSS and JavaScript hosted on GitHub Pages. Tasks are stored in Supab
 (PostgreSQL) and read and written through the Supabase auto-generated REST API with `fetch()`.
 
 - **Student ID:** 73196
-- **Live application:** https://zelnaga-16.github.io/vistula-task-manager/
-- **Repository:** https://github.com/zelnaga-16/vistula-task-manager
-- **Contributor page:** https://zelnaga-16.github.io/vistula-task-manager/contribution.html
-- **Contributor JSON:** https://zelnaga-16.github.io/vistula-task-manager/contribution.json
+- **Live application:** https://vistula-team-project-73196.github.io/vistula-task-manager/
+- **Repository:** https://github.com/vistula-team-project-73196/vistula-task-manager
+- **Contributor page:** https://vistula-team-project-73196.github.io/vistula-task-manager/contribution.html
+- **Contributor JSON:** https://vistula-team-project-73196.github.io/vistula-task-manager/contribution.json
 
 ## Team collaboration (Pull Requests)
 
-- Pull Request from my partner, merged into this repository: https://github.com/zelnaga-16/vistula-task-manager/pull/1
+- Pull Request from my partner, merged into this repository: https://github.com/vistula-team-project-73196/vistula-task-manager/pull/1
 - My Pull Request, merged into my partner’s repository: https://github.com/vistula-team-project-71616/vistula-task-manager/pull/1
 
 ## Features
