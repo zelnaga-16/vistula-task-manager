@@ -12,8 +12,8 @@ Plain HTML, CSS and JavaScript hosted on GitHub Pages. Tasks are stored in Supab
 
 ## Team collaboration (Pull Requests)
 
-- Pull Request from my partner, merged into this repository: _to be added_
-- My Pull Request, merged into my partner’s repository: _to be added_
+- Pull Request from my partner, merged into this repository: https://github.com/zelnaga-16/vistula-task-manager/pull/1
+- My Pull Request, merged into my partner’s repository: https://github.com/vistula-team-project-71616/vistula-task-manager/pull/1
 
 ## Features
 
